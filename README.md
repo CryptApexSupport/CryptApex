@@ -3,7 +3,7 @@
 Lost crypto wallets finder python brute force program
 
 ## Requirements 📋
-You must setup where to receive wallet finds;
+You must setup where to receive wallet finds:
 - Email (use your email address)
 - Telegram (Bot)
 
