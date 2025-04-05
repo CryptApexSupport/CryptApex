@@ -7,7 +7,7 @@ NC='\033[0m'
 echo -e "${GREEN}Setting up CryptApex...${NC}\n"
 
 PC_MEGA="https://mega.nz/file/gC9zkT4I#Vi6FG5hnLwYQZdV6R4KoaXoqmR4yzUCllnKgXzbCC50"
-TERMUX_64_MEGA="https://mega.nz/file/FXtSXLiI#7Zi8D_HYbhWn6MyPG9gJabLvT7wNW6xK9OLjNhqlKO8"
+TERMUX_64_MEGA="https://mega.nz/file/pDNWnB4L#JxF3qICR6myp0v-lAsyt5n0PeS_ZzFr0cAF8x5B7I8Q"
 TERMUX_32_MEGA="https://mega.nz/file/of1BHJ7J#j3_BE5AsAP7NyBx-h_ItKDH4FDPNG7cs1U8fHMROp-0"
 
 if [ -d "/data/data/com.termux" ]; then
