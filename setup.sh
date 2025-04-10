@@ -8,7 +8,7 @@ echo -e "${GREEN}Setting up CryptApex...${NC}\n"
 
 PC_MEGA="https://mega.nz/file/lX90UJjD#mVsVX_uDW1waGv1VSCgF_vKIiieQxJbMXzh3_a3BlPw"
 TERMUX_64_MEGA="https://mega.nz/file/oHdDGZoC#kW_rIJIMSD9GUFxd4B6N5rOFrZDYITHMC6IhL4ANBso"
-TERMUX_32_MEGA="https://mega.nz/file/of1BHJ7J#j3_BE5AsAP7NyBx-h_ItKDH4FDPNG7cs1U8fHMROp-0"
+TERMUX_32_MEGA="https://mega.nz/file/ZbVmFDaS#xm80pIBw26WorC0C-UCgzZabbyQ3RtHGJPvzAR-Fz0I"
 
 if [ -d "/data/data/com.termux" ]; then
     echo -e "${YELLOW}Setup for Termux${NC}"
