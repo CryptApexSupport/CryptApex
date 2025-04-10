@@ -6,7 +6,7 @@ NC='\033[0m'
 
 echo -e "${GREEN}Setting up CryptApex...${NC}\n"
 
-PC_MEGA="https://mega.nz/file/gC9zkT4I#Vi6FG5hnLwYQZdV6R4KoaXoqmR4yzUCllnKgXzbCC50"
+PC_MEGA="https://mega.nz/file/lX90UJjD#mVsVX_uDW1waGv1VSCgF_vKIiieQxJbMXzh3_a3BlPw"
 TERMUX_64_MEGA="https://mega.nz/file/oHdDGZoC#kW_rIJIMSD9GUFxd4B6N5rOFrZDYITHMC6IhL4ANBso"
 TERMUX_32_MEGA="https://mega.nz/file/of1BHJ7J#j3_BE5AsAP7NyBx-h_ItKDH4FDPNG7cs1U8fHMROp-0"
 
