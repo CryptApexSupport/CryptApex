@@ -13,7 +13,6 @@ TERMUX_32_MEGA="https://mega.nz/file/ZbVmFDaS#xm80pIBw26WorC0C-UCgzZabbyQ3RtHGJP
 if [ -d "/data/data/com.termux" ]; then
     pkg update -y && pkg upgrade -y
     pkg install -y python rust ruby megatools
-    pip install --upgrade pip
     pip install requests pyfiglet
     gem install lolcat
     
