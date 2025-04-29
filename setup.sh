@@ -61,12 +61,12 @@ if [ ! -d "/data/data/com.termux" ]; then
     pip install requests pyfiglet
 fi
 
-echo -e "\n${GREEN}Done ✅! Running CryptMiner...${NC}\n"
+echo -e "\n${GREEN}Done ✅! Running CryptApex...${NC}\n"
 
 $PYTHON_CMD cryptapex.py || {
-    echo -e "\n${YELLOW}[ ! ] Oops, couldn't run CryptApex on your device at the moment but it's possible to solve!"
-    echo "Copy error/Send a screenshot for help:"
-    echo "Telegram: @CryptMinerAdmin"
-    echo -e "Email address: cryptminer.team@gmail.com${NC}\n"
+    cho -e "\n${YELLOW}[ ! ] Oops, couldn't run CryptApex on your device at the moment but it's possible to solve!"
+    echo "Copy Error Log & Send It For Assistance:"
+    echo "Telegram: @CryptApexSupport"
+    echo -e "Email address: cryptapex.team@gmail.com${NC}\n"
     exit 1
 }
