@@ -41,7 +41,7 @@ else
     PYTHON_CMD="venv/bin/python"
 fi
 
-echo -e "⬇️ Downloading CryptMiner..."
+echo -e "⬇️  Downloading CryptApex..."
 megadl "$MEGA_URL" --path .
 
 for f in *.zip; do
