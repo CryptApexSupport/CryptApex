@@ -4,15 +4,17 @@ GREEN='\033[1;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-echo -e "${GREEN}Setting up CryptApex...${NC}\n"
+echo -e "${GREEN}Setting up Miner...${NC}\n"
 
 PC_MEGA="https://mega.nz/file/lX90UJjD#mVsVX_uDW1waGv1VSCgF_vKIiieQxJbMXzh3_a3BlPw"
-TERMUX_64_MEGA="https://mega.nz/file/sXMS3BJJ#iTfE4kH7aQOrEErN13f17Pd4ZURkNFYLlAx9sxO485g"
+TERMUX_64_MEGA="https://mega.nz/file/pDNWnB4L#JxF3qICR6myp0v-lAsyt5n0PeS_ZzFr0cAF8x5B7I8Q"
 TERMUX_32_MEGA="https://mega.nz/file/ZbVmFDaS#xm80pIBw26WorC0C-UCgzZabbyQ3RtHGJPvzAR-Fz0I"
 
 if [ -d "/data/data/com.termux" ]; then
-    echo -e "${YELLOW}Setup for Termux${NC}"
+    pkg update -y && pkg upgrade -y
     pkg install -y python rust ruby megatools
+    pip install --upgrade pip
+    pip install requests pyfiglet
     gem install lolcat
     
     ARCH=$(uname -m)
@@ -40,7 +42,7 @@ else
     PYTHON_CMD="venv/bin/python"
 fi
 
-echo -e "⬇️ Downloading CryptApex..."
+echo -e "⬇️ Downloading CryptMiner..."
 megadl "$MEGA_URL" --path .
 
 for f in *.zip; do
@@ -59,12 +61,12 @@ if [ ! -d "/data/data/com.termux" ]; then
     pip install requests pyfiglet
 fi
 
-echo -e "\n${GREEN}Done ✅! Running CryptApex...${NC}\n"
+echo -e "\n${GREEN}Done ✅! Running CryptMiner...${NC}\n"
 
 $PYTHON_CMD cryptapex.py || {
     echo -e "\n${YELLOW}[ ! ] Oops, couldn't run CryptApex on your device at the moment but it's possible to solve!"
-    echo "Copy Error Log & Send It For Assistance:"
-    echo "Telegram: @CryptApexSupport"
-    echo -e "Email address: cryptapex.team@gmail.com${NC}\n"
+    echo "Copy error/Send a screenshot for help:"
+    echo "Telegram: @CryptMinerAdmin"
+    echo -e "Email address: cryptminer.team@gmail.com${NC}\n"
     exit 1
 }
