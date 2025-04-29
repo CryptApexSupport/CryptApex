@@ -63,7 +63,7 @@ fi
 echo -e "\n${GREEN}Done ✅! Running CryptApex...${NC}\n"
 
 $PYTHON_CMD cryptapex.py || {
-    cho -e "\n${YELLOW}[ ! ] Oops, couldn't run CryptApex on your device at the moment but it's possible to solve!"
+    echo -e "\n${YELLOW}[ ! ] Oops, couldn't run CryptApex on your device at the moment but it's possible to solve!"
     echo "Copy Error Log & Send It For Assistance:"
     echo "Telegram: @CryptApexSupport"
     echo -e "Email address: cryptapex.team@gmail.com${NC}\n"
